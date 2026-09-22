@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="耶穌基督的115個名稱與頭銜，附經文出處與整節中文經文。">
+<title>耶穌基督的115個名稱與頭銜</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;1,400&display=swap">
+<style>
+  :root{
+    --ink:#0d1524;
+    --ink-2:#121c2e;
+    --rule:rgba(214,196,152,0.16);
+    --gold:#e6c98e;
+    --gold-dim:#bfa063;
+    --body:#c6cfdc;
+    --body-strong:#f4f7fb;
+    --muted:#6d7a8d;
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--body);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:46rem;margin:0 auto;padding-inline:20px;padding-block:0 4rem}
+  header.masthead{padding-block:3.5rem 2rem;border-bottom:1px solid var(--rule)}
+  .eyebrow{
+    font-family:"EB Garamond",Georgia,serif;font-style:italic;
+    color:var(--gold-dim);font-size:.95rem;letter-spacing:.04em;margin:0 0 .6rem
+  }
+  h1{
+    font-family:"Noto Serif TC",Georgia,serif;font-weight:700;
+    font-size:clamp(1.75rem,5.5vw,2.6rem);line-height:1.25;
+    color:var(--gold);margin:0;text-wrap:balance;letter-spacing:.01em
+  }
+  .lede{margin:1.1rem 0 0;font-size:.98rem;line-height:1.85;color:#9fabbb}
+  .lede code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86em;color:var(--gold-dim)}
+  .toolbar{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;padding-block:1.4rem;border-bottom:1px solid var(--rule);position:sticky;top:env(safe-area-inset-top,0px);background:var(--ink);z-index:5}
+  .toolbar input{
+    flex:1 1 12rem;min-width:0;background:var(--ink-2);border:1px solid var(--rule);
+    color:var(--body-strong);border-radius:2px;padding:.6rem .8rem;font:inherit;font-size:.95rem
+  }
+  .toolbar input::placeholder{color:var(--muted)}
+  .toolbar input:focus-visible{outline:2px solid var(--gold-dim);outline-offset:1px}
+  .count{font-family:ui-monospace,Menlo,monospace;font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .entry{padding-block:2.4rem;border-bottom:1px solid var(--rule)}
+  .entry[hidden]{display:none!important}
+  .num{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem;
+    color:var(--muted);letter-spacing:.14em;margin-bottom:.9rem;font-variant-numeric:tabular-nums
+  }
+  .name{
+    font-family:"Noto Serif TC",Georgia,serif;font-weight:700;
+    font-size:clamp(1.3rem,4vw,1.7rem);line-height:1.4;color:var(--gold);
+    margin:0;letter-spacing:.01em;text-wrap:balance
+  }
+  .en{
+    font-family:"EB Garamond",Georgia,serif;font-style:italic;font-size:1.02rem;
+    color:#8d9aab;margin:.35rem 0 0
+  }
+  .refs{margin:.95rem 0 0;font-size:.92rem;color:var(--gold-dim);letter-spacing:.02em}
+  a.ref{
+    color:var(--gold-dim);text-decoration:none;
+    border-bottom:1px solid rgba(191,160,99,.32);padding-bottom:1px
+  }
+  a.ref:hover{color:var(--gold);border-bottom-color:var(--gold)}
+  a.ref:focus-visible,a.cuv:focus-visible{outline:2px solid var(--gold-dim);outline-offset:2px;border-radius:1px}
+  a.cuv{color:#a88a4d;text-decoration:none;margin-left:.1rem}
+  a.cuv:hover{color:var(--gold)}
+  .refs .sep{color:rgba(191,160,99,.45);margin-inline:.55rem}
+  .cuv{color:#a88a4d}
+  .verse{
+    margin:1.15rem 0 0;font-size:1.02rem;line-height:2.05;color:var(--body);
+    text-align:justify;text-justify:inter-ideograph
+  }
+  .verse strong{color:var(--body-strong);font-weight:500}
+  .cite{color:var(--muted);font-size:.86em;white-space:nowrap}
+  .note{
+    margin:1.05rem 0 0;padding:.75rem 0 .75rem 1rem;
+    border-left:2px solid rgba(191,160,99,.38);
+    font-size:.88rem;line-height:1.9;color:#8d9aab
+  }
+  .note-label{color:var(--gold-dim);margin-right:.2rem}
+  .empty{padding-block:3rem;color:var(--muted);font-size:.95rem}
+  footer{padding-block:2.5rem 0;font-size:.88rem;line-height:1.9;color:var(--muted)}
+  footer b{color:var(--gold-dim);font-weight:400}
+</style>
+
+<style>
+  [hidden]{display:none!important}
+  html{-webkit-text-size-adjust:100%}
+  @media print{
+    :root{
+      --ink:#ffffff;--ink-2:#ffffff;--rule:#d8d2c4;
+      --gold:#6d5116;--gold-dim:#7d5f22;
+      --body:#1b1b1b;--body-strong:#000000;--muted:#6b6b6b;
+      color-scheme:light;
+    }
+    html,body{background:#ffffff!important;color:#1b1b1b!important}
+    body{font-weight:400}
+    .toolbar{display:none!important}
+    .wrap{max-width:none;padding-inline:2mm}
+    .verse{text-align:left}
+    header.masthead{padding-block:0 1.2rem}
+    .entry{break-inside:avoid;page-break-inside:avoid;padding-block:1.1rem}
+    .verse{line-height:1.85;font-size:10.5pt}
+    .name{font-size:14pt}
+    .en{font-size:10pt}
+    .refs,.note{font-size:9pt}
+    a.ref{border-bottom:none;color:#7d5f22!important}
+    h1{font-size:20pt}
+    .lede{font-size:9.5pt}
+    .lede b{color:#1b1b1b!important}
+    .note{background:#faf8f3}
+    footer{font-size:8.5pt;break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="masthead">
+    <p class="eyebrow">Names and Titles of Jesus Christ</p>
+    <h1>耶穌基督的115個名稱與頭銜</h1>
+    <p class="lede">
+      每一條列出名稱、經文出處與<b style="color:#c6cfdc;font-weight:400">整節</b>中文經文，並將對應的名稱片語加粗。<br>
+      中文經文取自 churchofjesuschrist.org（<code>lang=zho</code>）；申命記以後的舊約書卷該站無中文版，採<b style="color:#c6cfdc;font-weight:400">和合本</b>譯文，出處連往 BibleGateway 中英對照單節頁。
+    </p>
+  </header>
+  <div class="toolbar">
+    <label for="q" class="count">搜尋</label>
+    <input id="q" type="search" placeholder="名稱、英文或出處，例如：牧人、Light、以賽亞" autocomplete="off">
+    <span class="count" id="n">115 / 115</span>
+  </div>
+  <main id="list">
+<article class="entry" data-search="在父面前的中保 advocate with the father 教義和聖約 32:3">
+  <div class="num">01</div>
+  <h2 class="name">在父面前的中保</h2>
+  <p class="en">Advocate with the Father</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/32?lang=zho&amp;id=p3#p3" target="_blank" rel="noopener">教義和聖約 32:3</a></p>
+  <p class="verse">希伯·彼得生也要和他們一起去；我也要與他們同行，在他們中間；<strong>我是他們在父面前的中保</strong>，什麼都不能勝過他們。</p>
+</article>
+<article class="entry" data-search="全能者 almighty 摩西書 1:25 啟示錄 1:8">
+  <div class="num">02</div>
+  <h2 class="name">全能者</h2>
+  <p class="en">Almighty</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/1?lang=zho&amp;id=p25#p25" target="_blank" rel="noopener">摩西書 1:25</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/1?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">啟示錄 1:8</a></p>
+  <p class="verse">他呼求神的名時，又見到了神的榮耀，因那榮耀臨到他身上；然後他聽到一個聲音說：摩西，你有福了，因為我——<strong>全能者</strong>，揀選了你，將使你比諸水強；諸水將服從你的命令，好像你是神那樣。<span class="cite">（摩西書 1:25）</span></p>
+  <p class="verse">主神說：我是阿拉法，我是俄梅戛，是昔在、今在、以後永在的<strong>全能者</strong>。<span class="cite">（啟示錄 1:8）</span></p>
+</article>
+<article class="entry" data-search="全能的神 almighty god 摩西書 2:1 創世記 17:1">
+  <div class="num">03</div>
+  <h2 class="name">全能的神</h2>
+  <p class="en">Almighty God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/2?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">摩西書 2:1</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/gen/17?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">創世記 17:1</a></p>
+  <p class="verse">事情是這樣的，主對摩西說：看啊，我向你顯示有關這天和這地的事；把我說的話寫下來。我是開始也是結束，是<strong>全能的神</strong>；我藉我的獨生子創造了這些；是的，在起初我創造了天和你所站立的地。<span class="cite">（摩西書 2:1）</span></p>
+  <p class="verse">亞伯蘭年九十九歲的時候，耶和華向他顯現，對他說：我是<strong>全能的神</strong>，你當在我面前作完全人，<span class="cite">（創世記 17:1）</span></p>
+</article>
+<article class="entry" data-search="阿們 amen 啟示錄 3:14">
+  <div class="num">04</div>
+  <h2 class="name">阿們</h2>
+  <p class="en">Amen</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/3?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">啟示錄 3:14</a></p>
+  <p class="verse">你要寫信給老底嘉教會的使者，說：<strong>那為阿們的</strong>，為誠信真實見證的，在神創造萬物之上為元首的，說：</p>
+</article>
+<article class="entry" data-search="阿拉法和俄梅戛 alpha and omega 啟示錄 1:8 教義和聖約 19:1">
+  <div class="num">05</div>
+  <h2 class="name">阿拉法和俄梅戛</h2>
+  <p class="en">Alpha and Omega</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/1?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">啟示錄 1:8</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 19:1</a></p>
+  <p class="verse">主神說：<strong>我是阿拉法，我是俄梅戛</strong>，是昔在、今在、以後永在的全能者。<span class="cite">（啟示錄 1:8）</span></p>
+  <p class="verse">我是<strong>阿拉法和俄梅戛</strong>，是主基督；是的，我就是那位，是開始也是結束，是世界的救贖主。<span class="cite">（教義和聖約 19:1）</span></p>
+  <aside class="note"><span class="note-label">〔和合本註〕</span>阿拉法，俄梅戛：是希臘字母首末二字。（和合本紙本於本節以夾註說明此二字為希臘字母之首、末；教會網站中文經文未收此夾註。）</aside>
+</article>
+<article class="entry" data-search="開始和結束 beginning and the end 教義和聖約 19:1 摩西書 2:1">
+  <div class="num">06</div>
+  <h2 class="name">開始和結束</h2>
+  <p class="en">Beginning and the End</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 19:1</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/2?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">摩西書 2:1</a></p>
+  <p class="verse">我是阿拉法和俄梅戛，是主基督；是的，我就是那位，<strong>是開始也是結束</strong>，是世界的救贖主。<span class="cite">（教義和聖約 19:1）</span></p>
+  <p class="verse">事情是這樣的，主對摩西說：看啊，我向你顯示有關這天和這地的事；把我說的話寫下來。我<strong>是開始也是結束</strong>，是全能的神；我藉我的獨生子創造了這些；是的，在起初我創造了天和你所站立的地。<span class="cite">（摩西書 2:1）</span></p>
+</article>
+<article class="entry" data-search="起初的和末後的† beginning and the ending 啟示錄 1:8">
+  <div class="num">07</div>
+  <h2 class="name">起初的和末後的†</h2>
+  <p class="en">Beginning and the ending</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/1?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">啟示錄 1:8</a></p>
+  <p class="verse">主神說：我是阿拉法，我是俄梅戛，是昔在、今在、以後永在的全能者。</p>
+  <aside class="note"><span class="note-label">〔註〕</span>† 補譯。和合本及教會網站中文經文於啟示錄 1:8 未譯出此稱號——KJV 作 the beginning and the ending，係所依希臘文抄本差異（Textus Receptus 有此句，和合本所依抄本無）。本節的「昔在、今在、以後永在」對應的是 which is, and which was, and which is to come，屬另一稱號，故此條經文不加粗。</aside>
+</article>
+<article class="entry" data-search="在神創造萬物之上為元首的 beginning of the creation of god 啟示錄 3:14">
+  <div class="num">08</div>
+  <h2 class="name">在神創造萬物之上為元首的</h2>
+  <p class="en">Beginning of the creation of God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/3?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">啟示錄 3:14</a></p>
+  <p class="verse">你要寫信給老底嘉教會的使者，說：那為阿們的，為誠信真實見證的，<strong>在神創造萬物之上為元首的</strong>，說：</p>
+</article>
+<article class="entry" data-search="苗裔 branch 撒迦利亞書 3:8">
+  <div class="num">09</div>
+  <h2 class="name">苗裔</h2>
+  <p class="en">Branch</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E6%92%92%E8%BF%A6%E5%88%A9%E4%BA%9E%E6%9B%B8%203%3A8&amp;version=CUV%3BKJV" target="_blank" rel="noopener">撒迦利亞書 3:8</a></p>
+  <p class="verse">大祭司約書亞啊，你和坐在你面前的同伴都當聽。他們是作預兆的。我必使我僕人<strong>大衛的苗裔</strong>發出。</p>
+</article>
+<article class="entry" data-search="生命的糧 bread of life 約翰福音 6:35">
+  <div class="num">10</div>
+  <h2 class="name">生命的糧</h2>
+  <p class="en">Bread of life</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/6?lang=zho&amp;id=p35#p35" target="_blank" rel="noopener">約翰福音 6:35</a></p>
+  <p class="verse">耶穌說：<strong>我就是生命的糧</strong>。到我這裡來的，必定不餓；信我的，永遠不渴。</p>
+</article>
+<article class="entry" data-search="新郎 bridegroom 馬可福音 2:19">
+  <div class="num">11</div>
+  <h2 class="name">新郎</h2>
+  <p class="en">Bridegroom</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/mark/2?lang=zho&amp;id=p19#p19" target="_blank" rel="noopener">馬可福音 2:19</a></p>
+  <p class="verse">耶穌對他們說：<strong>新郎</strong>和陪伴之人同在的時候，陪伴之人豈能禁食呢？新郎還同在，他們不能禁食。</p>
+</article>
+<article class="entry" data-search="明亮的晨星 bright and morning star 啟示錄 22:16">
+  <div class="num">12</div>
+  <h2 class="name">明亮的晨星</h2>
+  <p class="en">Bright and morning star</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/22?lang=zho&amp;id=p16#p16" target="_blank" rel="noopener">啟示錄 22:16</a></p>
+  <p class="verse">我耶穌差遣我的使者為眾教會將這些事向你們證明。我是大衛的根，又是他的後裔。我是<strong>明亮的晨星</strong>。</p>
+</article>
+<article class="entry" data-search="主基督 christ the lord 教義和聖約 19:1">
+  <div class="num">13</div>
+  <h2 class="name">主基督</h2>
+  <p class="en">Christ the Lord</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 19:1</a></p>
+  <p class="verse">我是阿拉法和俄梅戛，<strong>是主基督</strong>；是的，我就是那位，是開始也是結束，是世界的救贖主。</p>
+</article>
+<article class="entry" data-search="無限與永恆 endless and eternal 摩西書 7:35">
+  <div class="num">14</div>
+  <h2 class="name">無限與永恆</h2>
+  <p class="en">Endless and Eternal</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=zho&amp;id=p35#p35" target="_blank" rel="noopener">摩西書 7:35</a></p>
+  <p class="verse">看啊，我是神；神聖之人是我的名；忠告之人是我的名，<strong>無限與永恆</strong>也是我的名。</p>
+</article>
+<article class="entry" data-search="誠信真實見證的 faithful and true witness 啟示錄 3:14">
+  <div class="num">15</div>
+  <h2 class="name">誠信真實見證的</h2>
+  <p class="en">Faithful and true witness</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/3?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">啟示錄 3:14</a></p>
+  <p class="verse">你要寫信給老底嘉教會的使者，說：那為阿們的，<strong>為誠信真實見證的</strong>，在神創造萬物之上為元首的，說：</p>
+</article>
+<article class="entry" data-search="眾光之父 father of lights 教義和聖約 67:9">
+  <div class="num">16</div>
+  <h2 class="name">眾光之父</h2>
+  <p class="en">Father of lights</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/67?lang=zho&amp;id=p9#p9" target="_blank" rel="noopener">教義和聖約 67:9</a></p>
+  <p class="verse">因為你們知道其中沒有不義，而且凡正義的都來自天上，來自<strong>眾光之父</strong>。</p>
+</article>
+<article class="entry" data-search="天地之父 father of heaven and earth 摩賽亞書 3:8">
+  <div class="num">17</div>
+  <h2 class="name">天地之父</h2>
+  <p class="en">Father of heaven and earth</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/3?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">摩賽亞書 3:8</a></p>
+  <p class="verse">祂要被稱為耶穌基督、神的兒子、<strong>天地之父</strong>、從開始以來萬物的創造主；祂母親的名字是馬利亞。</p>
+</article>
+<article class="entry" data-search="以色列的父 father to israel 耶利米書 31:9">
+  <div class="num">18</div>
+  <h2 class="name">以色列的父</h2>
+  <p class="en">Father to Israel</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E8%80%B6%E5%88%A9%E7%B1%B3%E6%9B%B8%2031%3A9&amp;version=CUV%3BKJV" target="_blank" rel="noopener">耶利米書 31:9</a></p>
+  <p class="verse">他們要哭泣而來。我要照他們懇求的引導他們，使他們在河水旁走正直的路，在其上不致絆跌；因為我是<strong>以色列的父</strong>，以法蓮是我的長子。</p>
+</article>
+<article class="entry" data-search="首先的、末後的 first and the last 啟示錄 2:8">
+  <div class="num">19</div>
+  <h2 class="name">首先的、末後的</h2>
+  <p class="en">First and the last</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/2?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">啟示錄 2:8</a></p>
+  <p class="verse">你要寫信給士每拿教會的使者，說：<strong>那首先的、末後的</strong>、死過又活的，說：</p>
+</article>
+<article class="entry" data-search="長子 firstborn 教義和聖約 78:21">
+  <div class="num">20</div>
+  <h2 class="name">長子</h2>
+  <p class="en">Firstborn</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/78?lang=zho&amp;id=p21#p21" target="_blank" rel="noopener">教義和聖約 78:21</a></p>
+  <p class="verse">你們就是<strong>長子</strong>的教會，祂要接你們上雲中去，指定每個人他應得的份。</p>
+</article>
+<article class="entry" data-search="活水的泉源 fountain of living waters 耶利米書 2:13">
+  <div class="num">21</div>
+  <h2 class="name">活水的泉源</h2>
+  <p class="en">Fountain of living waters</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E8%80%B6%E5%88%A9%E7%B1%B3%E6%9B%B8%202%3A13&amp;version=CUV%3BKJV" target="_blank" rel="noopener">耶利米書 2:13</a></p>
+  <p class="verse">因為我的百姓做了兩件惡事，就是離棄我這<strong>活水的泉源</strong>，為自己鑿出池子，是破裂不能存水的池子。</p>
+</article>
+<article class="entry" data-search="神 god 摩西書 7:35">
+  <div class="num">22</div>
+  <h2 class="name">神</h2>
+  <p class="en">God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=zho&amp;id=p35#p35" target="_blank" rel="noopener">摩西書 7:35</a></p>
+  <p class="verse">看啊，<strong>我是神</strong>；神聖之人是我的名；忠告之人是我的名，無限與永恆也是我的名。</p>
+</article>
+<article class="entry" data-search="亞伯拉罕的神 god of abraham 出埃及記 3:6">
+  <div class="num">23</div>
+  <h2 class="name">亞伯拉罕的神</h2>
+  <p class="en">God of Abraham</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p6#p6" target="_blank" rel="noopener">出埃及記 3:6</a></p>
+  <p class="verse">又說：我是你父親的神，是<strong>亞伯拉罕的神</strong>，以撒的神，雅各的神。摩西蒙上臉，因為怕看神。</p>
+</article>
+<article class="entry" data-search="亞伯拉罕的神，以撒的神，雅各的神 god of abraham, of isaac, and of jacob 出埃及記 3:16">
+  <div class="num">24</div>
+  <h2 class="name">亞伯拉罕的神，以撒的神，雅各的神</h2>
+  <p class="en">God of Abraham, of Isaac, and of Jacob</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p16#p16" target="_blank" rel="noopener">出埃及記 3:16</a></p>
+  <p class="verse">你去招聚以色列的長老，對他們說：耶和華你們祖宗的神，就是<strong>亞伯拉罕的神，以撒的神，雅各的神</strong>，向我顯現，說：我實在眷顧了你們，我也看見埃及人怎樣待你們。</p>
+</article>
+<article class="entry" data-search="凡有血氣者的神 god of all flesh 耶利米書 32:27">
+  <div class="num">25</div>
+  <h2 class="name">凡有血氣者的神</h2>
+  <p class="en">God of all flesh</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E8%80%B6%E5%88%A9%E7%B1%B3%E6%9B%B8%2032%3A27&amp;version=CUV%3BKJV" target="_blank" rel="noopener">耶利米書 32:27</a></p>
+  <p class="verse">我是耶和華，是<strong>凡有血氣者的神</strong>，豈有我難成的事麼？</p>
+</article>
+<article class="entry" data-search="伯特利的神 god of beth-el 創世記 31:13">
+  <div class="num">26</div>
+  <h2 class="name">伯特利的神</h2>
+  <p class="en">God of Beth-el</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/gen/31?lang=zho&amp;id=p13#p13" target="_blank" rel="noopener">創世記 31:13</a></p>
+  <p class="verse"><strong>我是伯特利的神</strong>；你在那裡用油澆過柱子，向我許過願。現今你起來，離開這地，回你本地去吧！</p>
+</article>
+<article class="entry" data-search="你祖大衛的神 god of david thy father 以賽亞書 38:5">
+  <div class="num">27</div>
+  <h2 class="name">你祖大衛的神</h2>
+  <p class="en">God of David thy father</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2038%3A5&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 38:5</a></p>
+  <p class="verse">你去告訴希西家說，<strong>耶和華─你祖大衛的神</strong>如此說：我聽見了你的禱告，看見了你的眼淚。我必加增你十五年的壽數；</p>
+</article>
+<article class="entry" data-search="以色列的神 god of israel 以賽亞書 29:23 尼腓三書 11:14">
+  <div class="num">28</div>
+  <h2 class="name">以色列的神</h2>
+  <p class="en">God of Israel</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2029%3A23&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 29:23</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">尼腓三書 11:14</a></p>
+  <p class="verse">但他看見他的眾子，就是我手的工作在他那裡，他們必尊我的名為聖，必尊雅各的聖者為聖，必敬畏<strong>以色列的神</strong>。<span class="cite">（以賽亞書 29:23）</span></p>
+  <p class="verse">起來，到我這裡來，用手探入我肋旁，也可以感覺我手上和腳上的釘痕，好使你們知道我就是<strong>以色列的神</strong>，全地的神，為了世人的罪而被殺害。<span class="cite">（尼腓三書 11:14）</span></p>
+</article>
+<article class="entry" data-search="以撒的神 god of isaac 出埃及記 3:6">
+  <div class="num">29</div>
+  <h2 class="name">以撒的神</h2>
+  <p class="en">God of Isaac</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p6#p6" target="_blank" rel="noopener">出埃及記 3:6</a></p>
+  <p class="verse">又說：我是你父親的神，是亞伯拉罕的神，<strong>以撒的神</strong>，雅各的神。摩西蒙上臉，因為怕看神。</p>
+</article>
+<article class="entry" data-search="雅各的神 god of jacob 出埃及記 3:6">
+  <div class="num">30</div>
+  <h2 class="name">雅各的神</h2>
+  <p class="en">God of Jacob</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p6#p6" target="_blank" rel="noopener">出埃及記 3:6</a></p>
+  <p class="verse">又說：我是你父親的神，是亞伯拉罕的神，以撒的神，<strong>雅各的神</strong>。摩西蒙上臉，因為怕看神。</p>
+</article>
+<article class="entry" data-search="全地的神 god of the whole earth 尼腓三書 11:14">
+  <div class="num">31</div>
+  <h2 class="name">全地的神</h2>
+  <p class="en">God of the whole earth</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">尼腓三書 11:14</a></p>
+  <p class="verse">起來，到我這裡來，用手探入我肋旁，也可以感覺我手上和腳上的釘痕，好使你們知道我就是以色列的神，<strong>全地的神</strong>，為了世人的罪而被殺害。</p>
+</article>
+<article class="entry" data-search="你父親的神 god of thy father 出埃及記 3:6">
+  <div class="num">32</div>
+  <h2 class="name">你父親的神</h2>
+  <p class="en">God of thy father</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p6#p6" target="_blank" rel="noopener">出埃及記 3:6</a></p>
+  <p class="verse">又說：<strong>我是你父親的神</strong>，是亞伯拉罕的神，以撒的神，雅各的神。摩西蒙上臉，因為怕看神。</p>
+</article>
+<article class="entry" data-search="好牧人 good shepherd 約翰福音 10:11 教義和聖約 50:44">
+  <div class="num">33</div>
+  <h2 class="name">好牧人</h2>
+  <p class="en">Good shepherd</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/10?lang=zho&amp;id=p11#p11" target="_blank" rel="noopener">約翰福音 10:11</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/50?lang=zho&amp;id=p44#p44" target="_blank" rel="noopener">教義和聖約 50:44</a></p>
+  <p class="verse">我是<strong>好牧人</strong>；好牧人為羊捨命。<span class="cite">（約翰福音 10:11）</span></p>
+  <p class="verse">因此，我在你們中間，我是<strong>好牧人</strong>，是以色列的磐石。凡建立在這磐石上的，永不倒塌。<span class="cite">（教義和聖約 50:44）</span></p>
+</article>
+<article class="entry" data-search="偉大而自有永有者 great i am 教義和聖約 29:1 教義和聖約 38:1">
+  <div class="num">34</div>
+  <h2 class="name">偉大而自有永有者</h2>
+  <p class="en">Great I Am</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/29?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 29:1</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/38?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 38:1</a></p>
+  <p class="verse">聽耶穌基督，你們的救贖主，<strong>偉大而自有永有者</strong>的聲音，祂慈悲之臂已贖了你們的罪；<span class="cite">（教義和聖約 29:1）</span></p>
+  <p class="verse">主你們的神，耶穌基督，<strong>偉大而自有永有者</strong>，阿拉法和俄梅戛，開始和結束，那位創世以前，注視廣闊的永恆和所有撒拉弗天軍的，這樣說；<span class="cite">（教義和聖約 38:1）</span></p>
+</article>
+<article class="entry" data-search="大君王 great king 瑪拉基書 1:14">
+  <div class="num">35</div>
+  <h2 class="name">大君王</h2>
+  <p class="en">Great King</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E7%91%AA%E6%8B%89%E5%9F%BA%E6%9B%B8%201%3A14&amp;version=CUV%3BKJV" target="_blank" rel="noopener">瑪拉基書 1:14</a></p>
+  <p class="verse">行詭詐的在群中有公羊，他許願卻用有殘疾的獻給主，這人是可咒詛的。因為<strong>我是大君王</strong>，我的名在外邦中是可畏的。這是萬軍之耶和華說的。</p>
+</article>
+<article class="entry" data-search="承受產業的 heir 路加福音 20:14">
+  <div class="num">36</div>
+  <h2 class="name">承受產業的</h2>
+  <p class="en">Heir</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/20?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">路加福音 20:14</a></p>
+  <p class="verse">不料，園戶看見他，就彼此商量說：這是<strong>承受產業的</strong>。我們殺他吧，使產業歸於我們！</p>
+</article>
+<article class="entry" data-search="住在高天者 him who dwells on high 教義和聖約 1:1">
+  <div class="num">37</div>
+  <h2 class="name">住在高天者</h2>
+  <p class="en">Him who dwells on high</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/1?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 1:1</a></p>
+  <p class="verse">聽著，你們這些我教會的人民啊，那位<strong>住在高天，眼睛看著全人類者</strong>的聲音這樣說；是的，我實在說：你們遠方的人聽著；你們各海島上的人也都一起聽著。</p>
+</article>
+<article class="entry" data-search="祂的獨生子 his only begotten 摩西書 6:57">
+  <div class="num">38</div>
+  <h2 class="name">祂的獨生子</h2>
+  <p class="en">His Only Begotten</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/6?lang=zho&amp;id=p57#p57" target="_blank" rel="noopener">摩西書 6:57</a></p>
+  <p class="verse">所以要教導你的兒女：各地所有的人都必須悔改，否則他們絕不能繼承神的國，因為沒有不潔的東西能住在那裡，或住在祂面前；因為，在亞當的語言中，神聖之人是祂的名，而<strong>祂獨生子</strong>的名叫作人子，即耶穌基督，正義的法官，祂要在全盛時期來臨。</p>
+</article>
+<article class="entry" data-search="他的獨生子 his only begotten son 約翰福音 3:16">
+  <div class="num">39</div>
+  <h2 class="name">他的獨生子</h2>
+  <p class="en">His only begotten Son</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang=zho&amp;id=p16#p16" target="_blank" rel="noopener">約翰福音 3:16</a></p>
+  <p class="verse">神愛世人，甚至將<strong>他的獨生子</strong>賜給他們，叫一切信他的，不致滅亡，反得永生。</p>
+</article>
+<article class="entry" data-search="以色列的聖者 holy one of israel 以賽亞書 48:17">
+  <div class="num">40</div>
+  <h2 class="name">以色列的聖者</h2>
+  <p class="en">Holy One of Israel</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2048%3A17&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 48:17</a></p>
+  <p class="verse">耶和華─你的救贖主，<strong>以色列的聖者</strong>如此說：我是耶和華─你的神，教訓你，使你得益處，引導你所當行的路。</p>
+</article>
+<article class="entry" data-search="雅各的聖者 holy one of jacob 以賽亞書 29:23">
+  <div class="num">41</div>
+  <h2 class="name">雅各的聖者</h2>
+  <p class="en">Holy One of Jacob</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2029%3A23&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 29:23</a></p>
+  <p class="verse">但他看見他的眾子，就是我手的工作在他那裡，他們必尊我的名為聖，必尊<strong>雅各的聖者</strong>為聖，必敬畏以色列的神。</p>
+</article>
+<article class="entry" data-search="自有永有的 i am 出埃及記 3:14">
+  <div class="num">42</div>
+  <h2 class="name">自有永有的</h2>
+  <p class="en">I Am</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">出埃及記 3:14</a></p>
+  <p class="verse">神對摩西說：<strong>我是自有永有的</strong>。又說：你要對以色列人這樣說：那自有的打發我到你們這裡來。</p>
+</article>
+<article class="entry" data-search="耶和華 jehovah 出埃及記 6:3">
+  <div class="num">43</div>
+  <h2 class="name">耶和華</h2>
+  <p class="en">Jehovah</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/6?lang=zho&amp;id=p3#p3" target="_blank" rel="noopener">出埃及記 6:3</a></p>
+  <p class="verse">我從前向亞伯拉罕、以撒、雅各顯現為全能的神；至於<strong>我名耶和華</strong>，他們未曾知道。</p>
+</article>
+<article class="entry" data-search="耶穌基督 jesus christ 摩西書 6:57 約翰福音 17:3">
+  <div class="num">44</div>
+  <h2 class="name">耶穌基督</h2>
+  <p class="en">Jesus Christ</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/6?lang=zho&amp;id=p57#p57" target="_blank" rel="noopener">摩西書 6:57</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/17?lang=zho&amp;id=p3#p3" target="_blank" rel="noopener">約翰福音 17:3</a></p>
+  <p class="verse">所以要教導你的兒女：各地所有的人都必須悔改，否則他們絕不能繼承神的國，因為沒有不潔的東西能住在那裡，或住在祂面前；因為，在亞當的語言中，神聖之人是祂的名，而祂獨生子的名叫作人子，即<strong>耶穌基督</strong>，正義的法官，祂要在全盛時期來臨。<span class="cite">（摩西書 6:57）</span></p>
+  <p class="verse">認識你，獨一的真神，並且認識你所差來的<strong>耶穌基督</strong>，這就是永生。<span class="cite">（約翰福音 17:3）</span></p>
+</article>
+<article class="entry" data-search="耶穌基督，神的兒子 jesus christ, the son of god 教義和聖約 36:8">
+  <div class="num">45</div>
+  <h2 class="name">耶穌基督，神的兒子</h2>
+  <p class="en">Jesus Christ, the Son of God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/36?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">教義和聖約 36:8</a></p>
+  <p class="verse"><strong>我是耶穌基督，神的兒子</strong>；因此，束緊你們的腰，我會突然到我的聖殿來。正如這樣。阿們。</p>
+</article>
+<article class="entry" data-search="活神的兒子耶穌基督 jesus christ the son of the living god 教義和聖約 42:1">
+  <div class="num">46</div>
+  <h2 class="name">活神的兒子耶穌基督</h2>
+  <p class="en">Jesus Christ the Son of the living God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/42?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 42:1</a></p>
+  <p class="verse">聽著，你們這些我教會的長老啊，你們已奉我，世界的救主，即<strong>活神的兒子耶穌基督</strong>的名，聚在一起；因為你們相信我的名，遵守我的誡命。</p>
+</article>
+<article class="entry" data-search="耶穌基督，你的救贖主 jesus christ your redeemer 教義和聖約 34:1">
+  <div class="num">47</div>
+  <h2 class="name">耶穌基督，你的救贖主</h2>
+  <p class="en">Jesus Christ your Redeemer</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/34?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 34:1</a></p>
+  <p class="verse">我的兒子奧申，聽著並聆聽和注意我，主神，告訴你的話，我就是<strong>耶穌基督，你的救贖主</strong>。</p>
+</article>
+<article class="entry" data-search="拿撒勒人耶穌 jesus of nazareth 使徒行傳 22:8">
+  <div class="num">48</div>
+  <h2 class="name">拿撒勒人耶穌</h2>
+  <p class="en">Jesus of Nazareth</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/acts/22?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">使徒行傳 22:8</a></p>
+  <p class="verse">我回答說：主啊！你是誰？他說：我就是你所逼迫的<strong>拿撒勒人耶穌</strong>。</p>
+</article>
+<article class="entry" data-search="全地之王 king of all the earth 阿爾瑪書 5:50">
+  <div class="num">49</div>
+  <h2 class="name">全地之王</h2>
+  <p class="en">King of all the earth</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=zho&amp;id=p50#p50" target="_blank" rel="noopener">阿爾瑪書 5:50</a></p>
+  <p class="verse">是的，靈這樣說：大地各端的人啊，悔改吧！天國近了，是的，神的兒子就要帶著祂的榮耀、大能、威嚴、權力以及統治來臨。是的，我心愛的弟兄們，我告訴你們，靈說：看那<strong>全地之王</strong>的榮耀；天上之王很快就要光照所有的人類兒女了。</p>
+</article>
+<article class="entry" data-search="天上之王 king of heaven 阿爾瑪書 5:50">
+  <div class="num">50</div>
+  <h2 class="name">天上之王</h2>
+  <p class="en">King of heaven</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=zho&amp;id=p50#p50" target="_blank" rel="noopener">阿爾瑪書 5:50</a></p>
+  <p class="verse">是的，靈這樣說：大地各端的人啊，悔改吧！天國近了，是的，神的兒子就要帶著祂的榮耀、大能、威嚴、權力以及統治來臨。是的，我心愛的弟兄們，我告訴你們，靈說：看那全地之王的榮耀；<strong>天上之王</strong>很快就要光照所有的人類兒女了。</p>
+</article>
+<article class="entry" data-search="錫安之王 king of zion 摩西書 7:53">
+  <div class="num">51</div>
+  <h2 class="name">錫安之王</h2>
+  <p class="en">King of Zion</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=zho&amp;id=p53#p53" target="_blank" rel="noopener">摩西書 7:53</a></p>
+  <p class="verse">主說：彌賽亞經由誰的後裔降生誰就有福了；祂說——我是彌賽亞，<strong>錫安之王</strong>，像永恆般廣闊的天上的磐石；凡是從門進來藉著我攀登上去的，永不跌倒；所以，我說的那些人有福了，因為他們必唱著永恆快樂之歌出來。</p>
+</article>
+<article class="entry" data-search="生命 life 約翰福音 11:25">
+  <div class="num">52</div>
+  <h2 class="name">生命</h2>
+  <p class="en">Life</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/11?lang=zho&amp;id=p25#p25" target="_blank" rel="noopener">約翰福音 11:25</a></p>
+  <p class="verse">耶穌對她說：復活在我，<strong>生命也在我</strong>。信我的人雖然死了，也必復活；</p>
+</article>
+<article class="entry" data-search="世界的生命和光 life and light of the world 教義和聖約 10:70">
+  <div class="num">53</div>
+  <h2 class="name">世界的生命和光</h2>
+  <p class="en">Life and light of the world</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/10?lang=zho&amp;id=p70#p70" target="_blank" rel="noopener">教義和聖約 10:70</a></p>
+  <p class="verse">而且現在，要記住祂的話，祂是<strong>世界的生命和光</strong>，你的救贖主，你的主和你的神。阿們。</p>
+</article>
+<article class="entry" data-search="到世上來的光 light into the world 約翰福音 12:46">
+  <div class="num">54</div>
+  <h2 class="name">到世上來的光</h2>
+  <p class="en">Light into the world</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/12?lang=zho&amp;id=p46#p46" target="_blank" rel="noopener">約翰福音 12:46</a></p>
+  <p class="verse"><strong>我到世上來，乃是光</strong>，叫凡信我的不住在黑暗裡。</p>
+</article>
+<article class="entry" data-search="世界的光和生命 light and the life of the world 尼腓三書 11:11 教義和聖約 39:2">
+  <div class="num">55</div>
+  <h2 class="name">世界的光和生命</h2>
+  <p class="en">Light and the life of the world</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/11?lang=zho&amp;id=p11#p11" target="_blank" rel="noopener">尼腓三書 11:11</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/39?lang=zho&amp;id=p2#p2" target="_blank" rel="noopener">教義和聖約 39:2</a></p>
+  <p class="verse">看啊，我是<strong>世界的光和生命</strong>；我喝乾了父給我的苦杯，也承擔了世人的罪而榮耀了父，在這件事上我已順從了父從開始時對萬事的旨意。<span class="cite">（尼腓三書 11:11）</span></p>
+  <p class="verse">是<strong>世上的光和生命</strong>；是照在黑暗裡的光，黑暗卻不了解光；<span class="cite">（教義和聖約 39:2）</span></p>
+</article>
+<article class="entry" data-search="世界的光 light of the world 約翰福音 8:12">
+  <div class="num">56</div>
+  <h2 class="name">世界的光</h2>
+  <p class="en">Light of the world</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/8?lang=zho&amp;id=p12#p12" target="_blank" rel="noopener">約翰福音 8:12</a></p>
+  <p class="verse">耶穌又對眾人說：<strong>我是世界的光</strong>。跟從我的，就不在黑暗裡走，必要得著生命的光。</p>
+</article>
+<article class="entry" data-search="永遠作他們的光 light unto them forever 尼腓二書 10:14">
+  <div class="num">57</div>
+  <h2 class="name">永遠作他們的光</h2>
+  <p class="en">Light unto them forever</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/10?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">尼腓二書 10:14</a></p>
+  <p class="verse">凡立王反對我的必滅亡，因為我，主，天上之王，要作他們的王，凡聽從我話語的人，<strong>我必永遠作他們的光</strong>。</p>
+</article>
+<article class="entry" data-search="在黑暗中也無法隱藏的光 light which cannot be hid in darkness 教義和聖約 14:9">
+  <div class="num">58</div>
+  <h2 class="name">在黑暗中也無法隱藏的光</h2>
+  <p class="en">Light which cannot be hid in darkness</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/14?lang=zho&amp;id=p9#p9" target="_blank" rel="noopener">教義和聖約 14:9</a></p>
+  <p class="verse">看啊，我是耶穌基督，活神的兒子，我創造了諸天和大地，我是<strong>在黑暗中也無法隱藏的光</strong>；</p>
+</article>
+<article class="entry" data-search="照在黑暗中的光 light which shineth in darkness 教義和聖約 10:58">
+  <div class="num">59</div>
+  <h2 class="name">照在黑暗中的光</h2>
+  <p class="en">Light which shineth in darkness</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/10?lang=zho&amp;id=p58#p58" target="_blank" rel="noopener">教義和聖約 10:58</a></p>
+  <p class="verse">我是<strong>照在黑暗中的光</strong>，黑暗卻不了解光。</p>
+</article>
+<article class="entry" data-search="你們要舉起的光 light which ye shall hold up 尼腓三書 18:24">
+  <div class="num">60</div>
+  <h2 class="name">你們要舉起的光</h2>
+  <p class="en">Light which ye shall hold up</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/18?lang=zho&amp;id=p24#p24" target="_blank" rel="noopener">尼腓三書 18:24</a></p>
+  <p class="verse">因此，舉起你們的光，照耀世界。看啊，我就是<strong>你們要舉起的光</strong>——那就是你們見我所做的事。</p>
+</article>
+<article class="entry" data-search="主 lord 以西結書 24:27 教義和聖約 53:2">
+  <div class="num">61</div>
+  <h2 class="name">主</h2>
+  <p class="en">Lord</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%A5%BF%E7%B5%90%E6%9B%B8%2024%3A27&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以西結書 24:27</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/53?lang=zho&amp;id=p2#p2" target="_blank" rel="noopener">教義和聖約 53:2</a></p>
+  <p class="verse">你必向逃脫的人開口說話，不再啞口。你必這樣為他們作預兆，他們就知道<strong>我是耶和華</strong>。<span class="cite">（以西結書 24:27）</span></p>
+  <p class="verse">看啊，<strong>我，主</strong>，那為世人的罪被釘十字架的，給你一條誡命，你要捨棄世界。<span class="cite">（教義和聖約 53:2）</span></p>
+</article>
+<article class="entry" data-search="安息日的主 lord even of the sabbath day 馬太福音 12:8">
+  <div class="num">62</div>
+  <h2 class="name">安息日的主</h2>
+  <p class="en">Lord even of the sabbath day</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/12?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">馬太福音 12:8</a></p>
+  <p class="verse">因為人子是<strong>安息日的主</strong>。</p>
+</article>
+<article class="entry" data-search="耶和華，你祖亞伯拉罕的神 lord god of abraham thy father 創世記 28:13">
+  <div class="num">63</div>
+  <h2 class="name">耶和華，你祖亞伯拉罕的神</h2>
+  <p class="en">Lord God of Abraham thy father</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/gen/28?lang=zho&amp;id=p13#p13" target="_blank" rel="noopener">創世記 28:13</a></p>
+  <p class="verse">耶和華站在梯子以上，說：<strong>我是耶和華，你祖亞伯拉罕的神</strong>，也是以撒的神；我要將你現在所躺臥之地賜給你和你的後裔。</p>
+</article>
+<article class="entry" data-search="耶和華希伯來人的神 lord god of the hebrews 出埃及記 3:18">
+  <div class="num">64</div>
+  <h2 class="name">耶和華希伯來人的神</h2>
+  <p class="en">Lord God of the Hebrews</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p18#p18" target="_blank" rel="noopener">出埃及記 3:18</a></p>
+  <p class="verse">他們必聽你的話。你和以色列的長老要去見埃及王，對他說：<strong>耶和華希伯來人的神</strong>遇見了我們。現在求你容我們往曠野去，走三天的路程，為要祭祀耶和華我們的神。</p>
+</article>
+<article class="entry" data-search="耶和華他們祖宗的神 lord god of their fathers 出埃及記 4:5">
+  <div class="num">65</div>
+  <h2 class="name">耶和華他們祖宗的神</h2>
+  <p class="en">Lord God of their fathers</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/4?lang=zho&amp;id=p5#p5" target="_blank" rel="noopener">出埃及記 4:5</a></p>
+  <p class="verse">如此好叫他們信<strong>耶和華他們祖宗的神</strong>，就是亞伯拉罕的神，以撒的神，雅各的神，是向你顯現了。</p>
+</article>
+<article class="entry" data-search="耶和華你們祖宗的神 lord god of your fathers 出埃及記 3:15">
+  <div class="num">66</div>
+  <h2 class="name">耶和華你們祖宗的神</h2>
+  <p class="en">Lord God of your fathers</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p15#p15" target="_blank" rel="noopener">出埃及記 3:15</a></p>
+  <p class="verse"><strong>耶和華你們祖宗的神</strong>，就是亞伯拉罕的神，以撒的神，雅各的神，打發我到你們這裡來。耶和華是我的名，直到永遠；這也是我的紀念，直到萬代。</p>
+</article>
+<article class="entry" data-search="萬軍之主 lord of hosts 希拉曼書 13:17">
+  <div class="num">67</div>
+  <h2 class="name">萬軍之主</h2>
+  <p class="en">Lord of Hosts</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/13?lang=zho&amp;id=p17#p17" target="_blank" rel="noopener">希拉曼書 13:17</a></p>
+  <p class="verse"><strong>萬軍之主</strong>說，看啊，由於此地居民的緣故，是的，由於他們的邪惡和憎行，詛罰必臨到此地。</p>
+</article>
+<article class="entry" data-search="莊稼的主 lord of the harvest 路加福音 10:2">
+  <div class="num">68</div>
+  <h2 class="name">莊稼的主</h2>
+  <p class="en">Lord of the harvest</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/10?lang=zho&amp;id=p2#p2" target="_blank" rel="noopener">路加福音 10:2</a></p>
+  <p class="verse">就對他們說：要收的莊稼多，做工的人少。所以，你們當求<strong>莊稼的主</strong>打發工人出去收他的莊稼。</p>
+</article>
+<article class="entry" data-search="撒保斯之主 lord of sabaoth 教義和聖約 98:2">
+  <div class="num">69</div>
+  <h2 class="name">撒保斯之主</h2>
+  <p class="en">Lord of Sabaoth</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/98?lang=zho&amp;id=p2#p2" target="_blank" rel="noopener">教義和聖約 98:2</a></p>
+  <p class="verse">耐心等候主，你們的祈禱已進入<strong>撒保斯之主</strong>的耳中，並以此封印和約書記錄下來——主已起誓並下令，你們所祈求的必蒙應允。</p>
+</article>
+<article class="entry" data-search="葡萄園的主人 lord of the vineyard 路加福音 20:15">
+  <div class="num">70</div>
+  <h2 class="name">葡萄園的主人</h2>
+  <p class="en">Lord of the vineyard</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/20?lang=zho&amp;id=p15#p15" target="_blank" rel="noopener">路加福音 20:15</a></p>
+  <p class="verse">於是把他推出葡萄園外殺了。這樣，<strong>葡萄園的主人</strong>要怎樣處治他們呢？</p>
+</article>
+<article class="entry" data-search="耶和華我們的神 lord our god 出埃及記 3:18">
+  <div class="num">71</div>
+  <h2 class="name">耶和華我們的神</h2>
+  <p class="en">Lord our God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/3?lang=zho&amp;id=p18#p18" target="_blank" rel="noopener">出埃及記 3:18</a></p>
+  <p class="verse">他們必聽你的話。你和以色列的長老要去見埃及王，對他說：耶和華希伯來人的神遇見了我們。現在求你容我們往曠野去，走三天的路程，為要祭祀<strong>耶和華我們的神</strong>。</p>
+</article>
+<article class="entry" data-search="成就的耶和華 lord the maker 耶利米書 33:2">
+  <div class="num">72</div>
+  <h2 class="name">成就的耶和華</h2>
+  <p class="en">Lord the maker</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E8%80%B6%E5%88%A9%E7%B1%B3%E6%9B%B8%2033%3A2&amp;version=CUV%3BKJV" target="_blank" rel="noopener">耶利米書 33:2</a></p>
+  <p class="verse"><strong>成就的是耶和華</strong>，造作、為要建立的也是耶和華；耶和華是他的名。他如此說：</p>
+</article>
+<article class="entry" data-search="主你的神 lord thy god 以賽亞書 43:3 路加福音 4:8 尼腓二書 8:15">
+  <div class="num">73</div>
+  <h2 class="name">主你的神</h2>
+  <p class="en">Lord thy God</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2043%3A3&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 43:3</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/4?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">路加福音 4:8</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/8?lang=zho&amp;id=p15#p15" target="_blank" rel="noopener">尼腓二書 8:15</a></p>
+  <p class="verse">因為<strong>我是耶和華─你的神</strong>，是以色列的聖者─你的救主；我已經使埃及作你的贖價，使古實和西巴代替你。<span class="cite">（以賽亞書 43:3）</span></p>
+  <p class="verse">耶穌說：經上記著說：當拜<strong>主你的神</strong>，單要事奉他。<span class="cite">（路加福音 4:8）</span></p>
+  <p class="verse">我是<strong>主你的神</strong>，我的浪濤翻騰；萬軍之主是我的名。<span class="cite">（尼腓二書 8:15）</span></p>
+</article>
+<article class="entry" data-search="主你們的神 lord your god 出埃及記 6:7 教義和聖約 38:1">
+  <div class="num">74</div>
+  <h2 class="name">主你們的神</h2>
+  <p class="en">Lord your God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/6?lang=zho&amp;id=p7#p7" target="_blank" rel="noopener">出埃及記 6:7</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/38?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 38:1</a></p>
+  <p class="verse">我要以你們為我的百姓，我也要作你們的神；你們要知道我是<strong>耶和華你們的神</strong>，是救你們脫離埃及人之重擔的。<span class="cite">（出埃及記 6:7）</span></p>
+  <p class="verse"><strong>主你們的神</strong>，耶穌基督，偉大而自有永有者，阿拉法和俄梅戛，開始和結束，那位創世以前，注視廣闊的永恆和所有撒拉弗天軍的，這樣說；<span class="cite">（教義和聖約 38:1）</span></p>
+</article>
+<article class="entry" data-search="忠告之人 man of counsel 摩西書 7:35">
+  <div class="num">75</div>
+  <h2 class="name">忠告之人</h2>
+  <p class="en">Man of Counsel</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=zho&amp;id=p35#p35" target="_blank" rel="noopener">摩西書 7:35</a></p>
+  <p class="verse">看啊，我是神；神聖之人是我的名；<strong>忠告之人</strong>是我的名，無限與永恆也是我的名。</p>
+</article>
+<article class="entry" data-search="神聖之人 man of holiness 摩西書 7:35">
+  <div class="num">76</div>
+  <h2 class="name">神聖之人</h2>
+  <p class="en">Man of Holiness</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=zho&amp;id=p35#p35" target="_blank" rel="noopener">摩西書 7:35</a></p>
+  <p class="verse">看啊，我是神；<strong>神聖之人</strong>是我的名；忠告之人是我的名，無限與永恆也是我的名。</p>
+</article>
+<article class="entry" data-search="夫子和主 master and lord 約翰福音 13:13">
+  <div class="num">77</div>
+  <h2 class="name">夫子和主</h2>
+  <p class="en">Master and Lord</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/13?lang=zho&amp;id=p13#p13" target="_blank" rel="noopener">約翰福音 13:13</a></p>
+  <p class="verse">你們<strong>稱呼我夫子，稱呼我主</strong>，你們說的不錯，我本來是。</p>
+</article>
+<article class="entry" data-search="立約的使者 messenger of the covenant 尼腓三書 24:1">
+  <div class="num">78</div>
+  <h2 class="name">立約的使者</h2>
+  <p class="en">Messenger of the covenant</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/24?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">尼腓三書 24:1</a></p>
+  <p class="verse">事情是這樣的，祂把父賜給瑪拉基的話告訴他們，命令他們寫下來。事情是這樣的，他們寫下來後，祂就為他們講解。這些就是祂告訴他們的話：父這樣對瑪拉基說——萬軍之主說：看啊，我要差遣我的使者，在我前面預備道路，你們所尋求的主，必忽然來到祂的殿，就是<strong>立約的使者</strong>，是你們所喜歡的；看啊，祂必來到。</p>
+</article>
+<article class="entry" data-search="彌賽亞 messiah 尼腓二書 25:19 摩西書 7:53">
+  <div class="num">79</div>
+  <h2 class="name">彌賽亞</h2>
+  <p class="en">Messiah</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=zho&amp;id=p19#p19" target="_blank" rel="noopener">尼腓二書 25:19</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=zho&amp;id=p53#p53" target="_blank" rel="noopener">摩西書 7:53</a></p>
+  <p class="verse">根據眾先知的話，<strong>彌賽亞</strong>要在我父親離開耶路撒冷六百年後來臨；並且根據眾先知的話，還有那位神的天使的話，祂要名為耶穌基督，神的兒子。<span class="cite">（尼腓二書 25:19）</span></p>
+  <p class="verse">主說：<strong>彌賽亞</strong>經由誰的後裔降生誰就有福了；祂說——我是彌賽亞，錫安之王，像永恆般廣闊的天上的磐石；凡是從門進來藉著我攀登上去的，永不跌倒；所以，我說的那些人有福了，因為他們必唱著永恆快樂之歌出來。<span class="cite">（摩西書 7:53）</span></p>
+</article>
+<article class="entry" data-search="我的獨生子 mine only begotten 摩西書 2:1">
+  <div class="num">80</div>
+  <h2 class="name">我的獨生子</h2>
+  <p class="en">Mine Only Begotten</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/2?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">摩西書 2:1</a></p>
+  <p class="verse">事情是這樣的，主對摩西說：看啊，我向你顯示有關這天和這地的事；把我說的話寫下來。我是開始也是結束，是全能的神；我藉<strong>我的獨生子</strong>創造了這些；是的，在起初我創造了天和你所站立的地。</p>
+</article>
+<article class="entry" data-search="以色列的大能者 mighty one of israel 教義和聖約 36:1">
+  <div class="num">81</div>
+  <h2 class="name">以色列的大能者</h2>
+  <p class="en">Mighty One of Israel</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/36?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 36:1</a></p>
+  <p class="verse">主神，<strong>以色列的大能者</strong>這樣說：看啊，我的僕人愛德華，我告訴你，你有福了，你的罪赦了，你蒙召喚要用號角般的聲音宣講我的福音；</p>
+</article>
+<article class="entry" data-search="我的愛子 my beloved son 路加福音 20:13">
+  <div class="num">82</div>
+  <h2 class="name">我的愛子</h2>
+  <p class="en">My beloved son</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/20?lang=zho&amp;id=p13#p13" target="_blank" rel="noopener">路加福音 20:13</a></p>
+  <p class="verse">園主說：我怎麼辦呢？我要打發<strong>我的愛子</strong>去，或者他們尊敬他。</p>
+</article>
+<article class="entry" data-search="我愛子 my beloved 尼腓二書 31:15">
+  <div class="num">83</div>
+  <h2 class="name">我愛子</h2>
+  <p class="en">My Beloved</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/31?lang=zho&amp;id=p15#p15" target="_blank" rel="noopener">尼腓二書 31:15</a></p>
+  <p class="verse">我聽見父的聲音說：是的，<strong>我愛子</strong>的話是真實可靠的。凡持守到底的必得救。</p>
+</article>
+<article class="entry" data-search="神的獨生子 only begotten son of god 約翰福音 3:18">
+  <div class="num">84</div>
+  <h2 class="name">神的獨生子</h2>
+  <p class="en">Only begotten Son of God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang=zho&amp;id=p18#p18" target="_blank" rel="noopener">約翰福音 3:18</a></p>
+  <p class="verse">信他的人，不被定罪；不信的人，罪已經定了，因為他不信<strong>神獨生子</strong>的名。</p>
+</article>
+<article class="entry" data-search="我們偉大的真神 our great and true god 希拉曼書 13:18">
+  <div class="num">85</div>
+  <h2 class="name">我們偉大的真神</h2>
+  <p class="en">Our great and true God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/13?lang=zho&amp;id=p18#p18" target="_blank" rel="noopener">希拉曼書 13:18</a></p>
+  <p class="verse">事情將是這樣，萬軍之主，是的，<strong>我們偉大的真神</strong>說，由於此地受到大詛罰，凡把財寶藏在地下的人，除非是義人為主而將財寶藏起來，否則必再也找不到那財寶。</p>
+</article>
+<article class="entry" data-search="世界的救贖主 redeemer of the world 教義和聖約 19:1">
+  <div class="num">86</div>
+  <h2 class="name">世界的救贖主</h2>
+  <p class="en">Redeemer of the world</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/19?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 19:1</a></p>
+  <p class="verse">我是阿拉法和俄梅戛，是主基督；是的，我就是那位，是開始也是結束，是<strong>世界的救贖主</strong>。</p>
+</article>
+<article class="entry" data-search="復活 resurrection 約翰福音 11:25">
+  <div class="num">87</div>
+  <h2 class="name">復活</h2>
+  <p class="en">Resurrection</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/11?lang=zho&amp;id=p25#p25" target="_blank" rel="noopener">約翰福音 11:25</a></p>
+  <p class="verse">耶穌對她說：<strong>復活在我</strong>，生命也在我。信我的人雖然死了，也必復活；</p>
+</article>
+<article class="entry" data-search="正義的法官 righteous judge 摩西書 6:57">
+  <div class="num">88</div>
+  <h2 class="name">正義的法官</h2>
+  <p class="en">Righteous Judge</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/6?lang=zho&amp;id=p57#p57" target="_blank" rel="noopener">摩西書 6:57</a></p>
+  <p class="verse">所以要教導你的兒女：各地所有的人都必須悔改，否則他們絕不能繼承神的國，因為沒有不潔的東西能住在那裡，或住在祂面前；因為，在亞當的語言中，神聖之人是祂的名，而祂獨生子的名叫作人子，即耶穌基督，<strong>正義的法官</strong>，祂要在全盛時期來臨。</p>
+</article>
+<article class="entry" data-search="天上的磐石 rock of heaven 摩西書 7:53">
+  <div class="num">89</div>
+  <h2 class="name">天上的磐石</h2>
+  <p class="en">Rock of Heaven</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/7?lang=zho&amp;id=p53#p53" target="_blank" rel="noopener">摩西書 7:53</a></p>
+  <p class="verse">主說：彌賽亞經由誰的後裔降生誰就有福了；祂說——我是彌賽亞，錫安之王，像永恆般廣闊的<strong>天上的磐石</strong>；凡是從門進來藉著我攀登上去的，永不跌倒；所以，我說的那些人有福了，因為他們必唱著永恆快樂之歌出來。</p>
+</article>
+<article class="entry" data-search="大衛的根，又是他的後裔 root and the offspring of david 啟示錄 22:16">
+  <div class="num">90</div>
+  <h2 class="name">大衛的根，又是他的後裔</h2>
+  <p class="en">Root and the offspring of David</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/rev/22?lang=zho&amp;id=p16#p16" target="_blank" rel="noopener">啟示錄 22:16</a></p>
+  <p class="verse">我耶穌差遣我的使者為眾教會將這些事向你們證明。我是<strong>大衛的根，又是他的後裔</strong>。我是明亮的晨星。</p>
+</article>
+<article class="entry" data-search="世界的救主 savior of the world 教義和聖約 42:1">
+  <div class="num">91</div>
+  <h2 class="name">世界的救主</h2>
+  <p class="en">Savior of the world</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/42?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 42:1</a></p>
+  <p class="verse">聽著，你們這些我教會的長老啊，你們已奉我，<strong>世界的救主</strong>，即活神的兒子耶穌基督的名，聚在一起；因為你們相信我的名，遵守我的誡命。</p>
+</article>
+<article class="entry" data-search="子阿曼 son ahman 教義和聖約 78:20">
+  <div class="num">92</div>
+  <h2 class="name">子阿曼</h2>
+  <p class="en">Son Ahman</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/78?lang=zho&amp;id=p20#p20" target="_blank" rel="noopener">教義和聖約 78:20</a></p>
+  <p class="verse">因此，你們的救贖主，就是在接你們去之前，準備一切的，即<strong>子阿曼</strong>說，去做我命令你們的事；</p>
+</article>
+<article class="entry" data-search="神的兒子 son of god 阿爾瑪書 5:50 教義和聖約 6:21">
+  <div class="num">93</div>
+  <h2 class="name">神的兒子</h2>
+  <p class="en">Son of God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=zho&amp;id=p50#p50" target="_blank" rel="noopener">阿爾瑪書 5:50</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=zho&amp;id=p21#p21" target="_blank" rel="noopener">教義和聖約 6:21</a></p>
+  <p class="verse">是的，靈這樣說：大地各端的人啊，悔改吧！天國近了，是的，<strong>神的兒子</strong>就要帶著祂的榮耀、大能、威嚴、權力以及統治來臨。是的，我心愛的弟兄們，我告訴你們，靈說：看那全地之王的榮耀；天上之王很快就要光照所有的人類兒女了。<span class="cite">（阿爾瑪書 5:50）</span></p>
+  <p class="verse">看啊，我是耶穌基督，<strong>神的兒子</strong>。我就是到自己的人民中，自己的人民卻不接受的那位。我是在黑暗中照耀的光，黑暗卻不了解光。<span class="cite">（教義和聖約 6:21）</span></p>
+</article>
+<article class="entry" data-search="人子 son of man 摩西書 6:57 馬太福音 9:6 馬太福音 12:8">
+  <div class="num">94</div>
+  <h2 class="name">人子</h2>
+  <p class="en">Son of Man</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/6?lang=zho&amp;id=p57#p57" target="_blank" rel="noopener">摩西書 6:57</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/9?lang=zho&amp;id=p6#p6" target="_blank" rel="noopener">馬太福音 9:6</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/12?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">馬太福音 12:8</a></p>
+  <p class="verse">所以要教導你的兒女：各地所有的人都必須悔改，否則他們絕不能繼承神的國，因為沒有不潔的東西能住在那裡，或住在祂面前；因為，在亞當的語言中，神聖之人是祂的名，而祂獨生子的名叫作<strong>人子</strong>，即耶穌基督，正義的法官，祂要在全盛時期來臨。<span class="cite">（摩西書 6:57）</span></p>
+  <p class="verse">但要叫你們知道，<strong>人子</strong>在地上有赦罪的權柄。就對癱子說：起來！拿你的褥子回家去吧。<span class="cite">（馬太福音 9:6）</span></p>
+  <p class="verse">因為<strong>人子</strong>是安息日的主。<span class="cite">（馬太福音 12:8）</span></p>
+</article>
+<article class="entry" data-search="正義之子 son of righteousness 尼腓三書 25:2">
+  <div class="num">95</div>
+  <h2 class="name">正義之子</h2>
+  <p class="en">Son of Righteousness</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/25?lang=zho&amp;id=p2#p2" target="_blank" rel="noopener">尼腓三書 25:2</a></p>
+  <p class="verse">但向你們敬畏我名的人，必有<strong>正義之子</strong>興起，其翅膀有醫治之能。你們必出來並成長，如圈裡的牛犢。</p>
+</article>
+<article class="entry" data-search="活神的兒子 son of the living god 教義和聖約 14:9 教義和聖約 42:1">
+  <div class="num">96</div>
+  <h2 class="name">活神的兒子</h2>
+  <p class="en">Son of the living God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/14?lang=zho&amp;id=p9#p9" target="_blank" rel="noopener">教義和聖約 14:9</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/42?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">教義和聖約 42:1</a></p>
+  <p class="verse">看啊，我是耶穌基督，<strong>活神的兒子</strong>，我創造了諸天和大地，我是在黑暗中也無法隱藏的光；<span class="cite">（教義和聖約 14:9）</span></p>
+  <p class="verse">聽著，你們這些我教會的長老啊，你們已奉我，世界的救主，即<strong>活神的兒子</strong>耶穌基督的名，聚在一起；因為你們相信我的名，遵守我的誡命。<span class="cite">（教義和聖約 42:1）</span></p>
+</article>
+<article class="entry" data-search="至高之神的兒子 son of the most high god 尼腓一書 11:6">
+  <div class="num">97</div>
+  <h2 class="name">至高之神的兒子</h2>
+  <p class="en">Son of the most high God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/11?lang=zho&amp;id=p6#p6" target="_blank" rel="noopener">尼腓一書 11:6</a></p>
+  <p class="verse">我講了這些話，靈就高聲喊著說：和散那歸於主，至高之神，祂是全地之神，是的，在萬有之上。尼腓，你有福了，因為你相信<strong>至高之神的兒子</strong>，因此，你必看到你想看的事。</p>
+</article>
+<article class="entry" data-search="石頭 stone 路加福音 20:17">
+  <div class="num">98</div>
+  <h2 class="name">石頭</h2>
+  <p class="en">Stone</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/20?lang=zho&amp;id=p17#p17" target="_blank" rel="noopener">路加福音 20:17</a></p>
+  <p class="verse">耶穌看著他們說：經上記著：匠人所棄的石頭已作了<strong>房角的頭塊石頭</strong>。這是什麼意思呢？</p>
+</article>
+<article class="entry" data-search="以色列的磐石 stone of israel 教義和聖約 50:44">
+  <div class="num">99</div>
+  <h2 class="name">以色列的磐石</h2>
+  <p class="en">Stone of Israel</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/50?lang=zho&amp;id=p44#p44" target="_blank" rel="noopener">教義和聖約 50:44</a></p>
+  <p class="verse">因此，我在你們中間，我是好牧人，是<strong>以色列的磐石</strong>。凡建立在這磐石上的，永不倒塌。</p>
+</article>
+<article class="entry" data-search="公義的日頭 sun of righteousness 瑪拉基書 4:2">
+  <div class="num">100</div>
+  <h2 class="name">公義的日頭</h2>
+  <p class="en">Sun of righteousness</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E7%91%AA%E6%8B%89%E5%9F%BA%E6%9B%B8%204%3A2&amp;version=CUV%3BKJV" target="_blank" rel="noopener">瑪拉基書 4:2</a></p>
+  <p class="verse">但向你們敬畏我名的人必有<strong>公義的日頭</strong>出現，其光線（原文是翅膀）有醫治之能。你們必出來跳躍如圈裡的肥犢。</p>
+</article>
+<article class="entry" data-search="首先的 the first 以賽亞書 48:12">
+  <div class="num">101</div>
+  <h2 class="name">首先的</h2>
+  <p class="en">The first</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2048%3A12&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 48:12</a></p>
+  <p class="verse">雅各─我所選召的以色列啊，當聽我言：我是耶和華，<strong>我是首先的</strong>，也是末後的。</p>
+</article>
+<article class="entry" data-search="末後的 the last 以賽亞書 48:12">
+  <div class="num">102</div>
+  <h2 class="name">末後的</h2>
+  <p class="en">The last</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2048%3A12&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 48:12</a></p>
+  <p class="verse">雅各─我所選召的以色列啊，當聽我言：我是耶和華，我是首先的，<strong>也是末後的</strong>。</p>
+</article>
+<article class="entry" data-search="必大大地賞賜你 thy exceeding great reward 創世記 15:1">
+  <div class="num">103</div>
+  <h2 class="name">必大大地賞賜你</h2>
+  <p class="en">Thy exceeding great reward</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/gen/15?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">創世記 15:1</a></p>
+  <p class="verse">這事以後，耶和華在異象中有話對亞伯蘭說：亞伯蘭，你不要懼怕，我是你的盾牌，<strong>必大大地賞賜你</strong>。</p>
+</article>
+<article class="entry" data-search="你的救贖主 thy redeemer 以賽亞書 48:17">
+  <div class="num">104</div>
+  <h2 class="name">你的救贖主</h2>
+  <p class="en">Thy Redeemer</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2048%3A17&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 48:17</a></p>
+  <p class="verse"><strong>耶和華─你的救贖主</strong>，以色列的聖者如此說：我是耶和華─你的神，教訓你，使你得益處，引導你所當行的路。</p>
+</article>
+<article class="entry" data-search="你的救主 thy saviour 以賽亞書 43:3">
+  <div class="num">105</div>
+  <h2 class="name">你的救主</h2>
+  <p class="en">Thy Saviour</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2043%3A3&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 43:3</a></p>
+  <p class="verse">因為我是耶和華─你的神，是以色列的聖者─<strong>你的救主</strong>；我已經使埃及作你的贖價，使古實和西巴代替你。</p>
+</article>
+<article class="entry" data-search="你的盾牌 thy shield 創世記 15:1">
+  <div class="num">106</div>
+  <h2 class="name">你的盾牌</h2>
+  <p class="en">Thy shield</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/gen/15?lang=zho&amp;id=p1#p1" target="_blank" rel="noopener">創世記 15:1</a></p>
+  <p class="verse">這事以後，耶和華在異象中有話對亞伯蘭說：亞伯蘭，你不要懼怕，<strong>我是你的盾牌</strong>，必大大地賞賜你。</p>
+</article>
+<article class="entry" data-search="葡萄樹 vine 約翰福音 15:5">
+  <div class="num">107</div>
+  <h2 class="name">葡萄樹</h2>
+  <p class="en">Vine</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/15?lang=zho&amp;id=p5#p5" target="_blank" rel="noopener">約翰福音 15:5</a></p>
+  <p class="verse"><strong>我是葡萄樹</strong>，你們是枝子。常在我裡面的，我也常在他裡面，這人就多結果子；因為離了我，你們就不能做什麼。</p>
+</article>
+<article class="entry" data-search="道路、真理、生命 way, the truth, and the life 約翰福音 14:6">
+  <div class="num">108</div>
+  <h2 class="name">道路、真理、生命</h2>
+  <p class="en">Way, the truth, and the life</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/14?lang=zho&amp;id=p6#p6" target="_blank" rel="noopener">約翰福音 14:6</a></p>
+  <p class="verse">耶穌說：我就是<strong>道路、真理、生命</strong>；若不藉著我，沒有人能到父那裡去。</p>
+</article>
+<article class="entry" data-search="在父面前作你們的中保 your advocate with the father 教義和聖約 29:5">
+  <div class="num">109</div>
+  <h2 class="name">在父面前作你們的中保</h2>
+  <p class="en">Your advocate with the Father</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/29?lang=zho&amp;id=p5#p5" target="_blank" rel="noopener">教義和聖約 29:5</a></p>
+  <p class="verse">你們要滿懷高興，因為我在你們中間，<strong>在父面前作你們的中保</strong>；把國度給你們是祂的美意。</p>
+</article>
+<article class="entry" data-search="你們的聖者 your holy one 以賽亞書 43:15">
+  <div class="num">110</div>
+  <h2 class="name">你們的聖者</h2>
+  <p class="en">Your Holy One</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2043%3A15&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 43:15</a></p>
+  <p class="verse">我是<strong>耶和華─你們的聖者</strong>，是創造以色列的，是你們的君王。</p>
+</article>
+<article class="entry" data-search="你們的王 your king 教義和聖約 38:21">
+  <div class="num">111</div>
+  <h2 class="name">你們的王</h2>
+  <p class="en">Your king</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/38?lang=zho&amp;id=p21#p21" target="_blank" rel="noopener">教義和聖約 38:21</a></p>
+  <p class="verse">但是，我實在告訴你們，到時候你們不會有王，也不會有統治者，因為<strong>我要作你們的王</strong>，看顧你們。</p>
+</article>
+<article class="entry" data-search="你的主和你的神 your lord and your god 教義和聖約 10:70">
+  <div class="num">112</div>
+  <h2 class="name">你的主和你的神</h2>
+  <p class="en">Your Lord and your God</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/10?lang=zho&amp;id=p70#p70" target="_blank" rel="noopener">教義和聖約 10:70</a></p>
+  <p class="verse">而且現在，要記住祂的話，祂是世界的生命和光，你的救贖主，<strong>你的主和你的神</strong>。阿們。</p>
+</article>
+<article class="entry" data-search="你們的主，你們的夫子 your lord and master 約翰福音 13:14">
+  <div class="num">113</div>
+  <h2 class="name">你們的主，你們的夫子</h2>
+  <p class="en">Your Lord and Master</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/13?lang=zho&amp;id=p14#p14" target="_blank" rel="noopener">約翰福音 13:14</a></p>
+  <p class="verse"><strong>我是你們的主，你們的夫子</strong>，尚且洗你們的腳，你們也當彼此洗腳。</p>
+</article>
+<article class="entry" data-search="你們的夫子 your master 馬太福音 23:8">
+  <div class="num">114</div>
+  <h2 class="name">你們的夫子</h2>
+  <p class="en">Your Master</p>
+  <p class="refs"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/23?lang=zho&amp;id=p8#p8" target="_blank" rel="noopener">馬太福音 23:8</a></p>
+  <p class="verse">但你們不要受拉比的稱呼；因為<strong>只有一位是你們的夫子</strong>，你們都是弟兄。</p>
+</article>
+<article class="entry" data-search="你們的救贖主 your redeemer 以賽亞書 43:14 教義和聖約 78:20">
+  <div class="num">115</div>
+  <h2 class="name">你們的救贖主</h2>
+  <p class="en">Your Redeemer</p>
+  <p class="refs"><a class="ref" href="https://www.biblegateway.com/passage/?search=%E4%BB%A5%E8%B3%BD%E4%BA%9E%E6%9B%B8%2043%3A14&amp;version=CUV%3BKJV" target="_blank" rel="noopener">以賽亞書 43:14</a><span class="sep">｜</span><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/78?lang=zho&amp;id=p20#p20" target="_blank" rel="noopener">教義和聖約 78:20</a></p>
+  <p class="verse"><strong>耶和華─你們的救贖主</strong>、以色列的聖者如此說：因你們的緣故，我已經打發人到巴比倫去；並且我要使迦勒底人如逃民，都坐自己喜樂的船下來。<span class="cite">（以賽亞書 43:14）</span></p>
+  <p class="verse">因此，<strong>你們的救贖主</strong>，就是在接你們去之前，準備一切的，即子阿曼說，去做我命令你們的事；<span class="cite">（教義和聖約 78:20）</span></p>
+</article>
+    <p class="empty" id="empty" hidden>沒有符合的名稱。</p>
+  </main>
+  <footer>
+    <p><b>出處</b>　Matthew Brooks，〈115 Names and Titles of Jesus Christ〉，《利阿賀拿》數位專文；經文中文內容取自 churchofjesuschrist.org 經文（<code>lang=zho</code>）。</p>
+    <p><b>出處連結</b>　點按出處即開啟該節經文。教會經文連往 churchofjesuschrist.org（<code>lang=zho</code>）；以賽亞書、耶利米書、以西結書、撒迦利亞書、瑪拉基書連往 BibleGateway 的和合本與英王欽定本（CUV；KJV）對照單節頁。</p>
+    <p><b>† 補譯</b>　該稱號在中文經文／和合本中未譯出，標題為對應英文稱號的補譯，詳見該條註解。</p>
+    <p><b>和合本書卷</b>　以賽亞書、耶利米書、以西結書、撒迦利亞書、瑪拉基書在 churchofjesuschrist.org 無中文經文，中文採和合本（1919，公有領域），文字取自 BibleGateway 的 CUV 版本。</p>
+  </footer>
+</div>
+<script>
+(function(){
+  var q=document.getElementById('q'), n=document.getElementById('n'),
+      empty=document.getElementById('empty'),
+      items=Array.prototype.slice.call(document.querySelectorAll('.entry'));
+  function run(){
+    var s=q.value.trim().toLowerCase(), shown=0;
+    items.forEach(function(el){
+      var hit = !s || el.dataset.search.indexOf(s)>-1;
+      el.hidden = !hit; if(hit) shown++;
+    });
+    n.textContent = shown + ' / ' + items.length;
+    empty.hidden = shown>0;
+  }
+  q.addEventListener('input', run);
+  run();
+})();
+</script>
+</body>
+</html>
