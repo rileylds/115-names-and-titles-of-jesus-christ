@@ -66,16 +66,42 @@
   }
   .name a.gs, .en a.gs{
     color:inherit;text-decoration:none;
-    border-bottom:1px dashed rgba(230,201,142,.42);
+    border-bottom:1px dashed rgba(230,201,142,.6);
   }
   .name a.gs:hover{border-bottom-color:var(--gold);border-bottom-style:solid}
-  .en a.gs{border-bottom-color:rgba(141,154,171,.45)}
+  .en a.gs{border-bottom-color:rgba(141,154,171,.62)}
   .en a.gs:hover{color:#b9c4d2;border-bottom-style:solid}
   .name a.gs:focus-visible, .en a.gs:focus-visible{
     outline:2px solid var(--gold-dim);outline-offset:3px;border-radius:1px
   }
+  header.masthead{text-align:center}
+  header.masthead h1{color:#eef2f7}
+  header.masthead h1 .h1-accent{color:var(--gold)}
+  .rule{width:54px;height:1px;background:rgba(230,201,142,.55);margin:1.4rem auto 0}
+  .quote{margin:1.5rem auto 0;max-width:31rem;font-family:"EB Garamond",Georgia,serif;font-size:1.06rem;line-height:2;color:#cdd6e1}
+  .quote-src{margin:.7rem auto 0;font-size:.78rem;letter-spacing:.04em;color:var(--muted)}
+  .study{margin:2rem auto 0;max-width:33rem;border-top:1px solid var(--rule);padding-top:1.6rem;text-align:left}
+  .study-h{margin:0 0 1.25rem;text-align:center;font-weight:400;font-size:.8rem;letter-spacing:.1em;color:#a08a55}
+  .q{border-left:2px solid rgba(230,201,142,.45);padding:2px 0 2px 1rem}
+  .q + .q{margin-top:1.15rem}
+  .qn{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.7rem;color:var(--muted);letter-spacing:.14em;margin-bottom:.45rem}
+  .q p{margin:0;font-size:.97rem;line-height:1.9;color:#d6dde6}
+  .q .hl{color:var(--gold)}
+  .q-hint{margin:.55rem 0 0;font-size:.82rem;line-height:1.85;color:#8d9aab}
+  .q-hint a{color:var(--gold);text-decoration:none;border-bottom:1px dashed rgba(230,201,142,.6)}
+  .q-hint a:hover{border-bottom-style:solid}
   .crosslink{margin:1.1rem 0 0;font-size:.92rem}
   .crosslink a{color:var(--gold-dim);text-decoration:none;border-bottom:1px solid rgba(191,160,99,.32)}
+  .verse.en-verse{font-family:"EB Garamond",Georgia,serif;font-style:normal;font-size:1.12rem;line-height:1.8;color:#a8b3c4;text-align:left;margin:.75rem 0 0}
+  .verse.en-verse strong{color:#e6ecf4;font-weight:500}
+  :root[data-lang="zh"] .L.lg-en,:root[data-lang="zh"] .L.lg-both{display:none}
+  :root[data-lang="en"] .L.lg-zh,:root[data-lang="en"] .L.lg-both{display:none}
+  .dot{color:rgba(191,160,99,.5)}
+  .langbar{display:inline-flex;gap:5px;flex:0 0 auto}
+  .langbar button{font:inherit;font-size:.82rem;color:#8d9aab;background:transparent;border:1px solid rgba(214,196,152,.28);border-radius:999px;padding:.32rem .8rem;cursor:pointer}
+  .langbar button:hover{color:#e6c98e;border-color:rgba(230,201,142,.6)}
+  .langbar button[aria-pressed="true"]{background:#e6c98e;border-color:#e6c98e;color:#0e1626}
+  .langbar button:focus-visible{outline:2px solid var(--gold-dim);outline-offset:2px}
   .crosslink a:hover{color:var(--gold);border-bottom-color:var(--gold)}
   .refs{margin:.95rem 0 0;font-size:.92rem;color:var(--gold-dim);letter-spacing:.02em}
   a.ref{
@@ -110,6 +136,22 @@
   :root[data-lang="zh"] .L.lg-en,:root[data-lang="zh"] .L.lg-both{display:none}
   :root[data-lang="en"] .L.lg-zh,:root[data-lang="en"] .L.lg-both{display:none}
   .dot{color:rgba(191,160,99,.5)}
+  header.masthead{text-align:center}
+  header.masthead h1{color:#eef2f7}
+  header.masthead h1 .h1-accent{color:var(--gold)}
+  .rule{width:54px;height:1px;background:rgba(230,201,142,.55);margin:1.4rem auto 0}
+  .quote{margin:1.5rem auto 0;max-width:31rem;font-family:'EB Garamond',Georgia,serif;font-size:1.06rem;line-height:2;color:#cdd6e1}
+  .quote-src{margin:.7rem auto 0;font-size:.78rem;letter-spacing:.04em;color:var(--muted)}
+  .study{margin:2rem auto 0;max-width:33rem;border-top:1px solid var(--rule);padding-top:1.6rem;text-align:left}
+  .study-h{margin:0 0 1.25rem;text-align:center;font-weight:400;font-size:.8rem;letter-spacing:.1em;color:#a08a55}
+  .q{border-left:2px solid rgba(230,201,142,.45);padding:2px 0 2px 1rem}
+  .q + .q{margin-top:1.15rem}
+  .qn{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.7rem;color:var(--muted);letter-spacing:.14em;margin-bottom:.45rem}
+  .q p{margin:0;font-size:.97rem;line-height:1.9;color:#d6dde6}
+  .q .hl{color:var(--gold)}
+  .q-hint{margin:.55rem 0 0;font-size:.82rem;line-height:1.85;color:#8d9aab}
+  .q-hint a{color:var(--gold);text-decoration:none;border-bottom:1px dashed rgba(230,201,142,.6)}
+  .q-hint a:hover{border-bottom-style:solid}
   .langbar{display:inline-flex;gap:5px;flex:0 0 auto}
   .langbar button{font:inherit;font-size:.82rem;color:#8d9aab;background:transparent;border:1px solid rgba(214,196,152,.28);border-radius:999px;padding:.32rem .8rem;cursor:pointer}
   .langbar button:hover{color:#e6c98e;border-color:rgba(230,201,142,.6)}
@@ -145,6 +187,10 @@
     .lede b{color:#1b1b1b!important}
     .note{background:#faf8f3}
     footer{font-size:8.5pt;break-inside:avoid}
+    :root[data-lang="zh"] .L.lg-en,:root[data-lang="zh"] .L.lg-both,
+    :root[data-lang="en"] .L.lg-zh,:root[data-lang="en"] .L.lg-both{display:revert!important}
+    .verse.en-verse{color:#3a3a3a!important;font-size:11pt}
+    .verse.en-verse strong{color:#000!important}
   }
   @media print{:root[data-lang="zh"] .L.lg-en,:root[data-lang="zh"] .L.lg-both,:root[data-lang="en"] .L.lg-zh,:root[data-lang="en"] .L.lg-both{display:revert!important}.en-verse{color:#3a3a3a!important}.en-verse strong{color:#000!important}}
 </style>
@@ -153,15 +199,18 @@
 
 <div class="wrap">
   <header class="masthead">
-    <p class="eyebrow">50 Names and Titles of Jesus Christ</p>
-    <h1>耶穌基督的50個名稱與頭銜</h1>
-    <p class="lede">
-      每一條列出名稱、經文出處與<b style="color:#c6cfdc;font-weight:400">整節</b>中文經文，並將對應的名稱片語加粗。<br>
-      名稱下方有虛線者可點按，開啟<b style="color:#c6cfdc;font-weight:400">經文指南</b>的該詞條定義（中文名稱開中文版，英文名稱開英文版）。<br>
-      預設中英對照；可用上方的<b style="color:#c6cfdc;font-weight:400">雙語／中文／English</b>切換，選擇會記住。<br>
-      中文經文取自 churchofjesuschrist.org（<code>lang=zho</code>）；約伯記、以賽亞書、耶利米書該站無中文版，採<b style="color:#c6cfdc;font-weight:400">和合本</b>譯文，出處連往 BibleGateway 中英對照單節頁。
-    </p>
-    <p class="crosslink">另見：<a href="https://rileylds.github.io/115-names-and-titles-of-jesus-christ/">耶穌基督的115個名稱與頭銜 →</a></p>
+    <p class="eyebrow">ComeUntoChrist.org　·　50 Names and Titles of Jesus Christ</p>
+    <h1>耶穌基督的<br><span class="h1-accent">50個名稱與頭銜</span></h1>
+    <div class="rule"></div>
+    <p class="quote">納爾遜會長說：「藉著祈禱、認真尋求去了解祂每一個不同頭銜和名字對你個人有何意義。」</p>
+    <p class="quote-src">〈先知、領導才能與神聖律法〉，2017年1月8日</p>
+    <section class="study" aria-labelledby="study-h">
+      <h2 class="study-h" id="study-h">研讀時，為每一個名稱問自己兩個問題</h2>
+      <div class="q"><div class="qn">01</div><p>這個名稱和頭銜<span class="hl">是什麼意思</span>？</p>
+      <p class="q-hint">點擊名稱本身就能開啟經文指南的定義——現在就試試 <a href="https://www.churchofjesuschrist.org/study/scriptures/gs/savior?lang=zho" target="_blank" rel="noopener">救主</a></p></div>
+      <div class="q"><div class="qn">02</div><p>這個名稱和頭銜教導我，<span class="hl">為什麼我需要與耶穌基督建立關係</span>？</p></div>
+    </section>
+    <p class="crosslink">進階：<a href="https://rileylds.github.io/115-names-and-titles-of-jesus-christ/115-names.html">耶穌基督的115個名稱與頭銜 →</a></p>
   </header>
   <div class="toolbar">
     <span class="langbar" role="group" aria-label="語言">
@@ -470,8 +519,8 @@
 </article>
 <article class="entry" data-search="細羅 shiloh 創世記 49:10 genesis 49:10 the sceptre shall not depart from judah, nor a lawgiver from between his feet, until shiloh come; and unto him shall the gathering of the people be.">
   <div class="num">41</div>
-  <h2 class="name">細羅</h2>
-  <p class="en">Shiloh</p>
+  <h2 class="name"><a class="gs" href="https://www.churchofjesuschrist.org/study/scriptures/bd/shiloh?lang=eng" target="_blank" rel="noopener" title="開啟聖經字典詞條（僅英文）">細羅</a></h2>
+  <p class="en"><a class="gs" href="https://www.churchofjesuschrist.org/study/scriptures/bd/shiloh?lang=eng" target="_blank" rel="noopener" title="Open Bible Dictionary entry">Shiloh</a></p>
   <p class="refs"><span class="L lg-zh"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/gen/49?lang=zho&amp;id=p10#p10" target="_blank" rel="noopener">創世記 49:10</a></span><span class="L lg-both dot"> · </span><span class="L lg-en"><a class="ref" href="https://www.churchofjesuschrist.org/study/scriptures/ot/gen/49?lang=eng&amp;id=p10#p10" target="_blank" rel="noopener">Genesis 49:10</a></span></p>
   <p class="verse L lg-zh">圭必不離猶大，杖必不離他兩腳之間，直等<strong>細羅</strong>來到，萬民都必歸順。</p>
   <p class="verse en-verse L lg-en">The sceptre shall not depart from Judah, nor a lawgiver from between his feet, until <strong>Shiloh</strong> come; and unto him shall the gathering of the people be.</p>
@@ -555,8 +604,9 @@
     <p class="empty" id="empty" hidden>沒有符合的名稱。</p>
   </main>
   <footer>
-    <p><b>出處</b>　〈50 Names and Titles of Jesus Christ〉，ComeUntoChrist.org；經文中文內容取自 churchofjesuschrist.org 經文（<code>lang=zho</code>）。</p>
-    <p><b>詞條連結</b>　名稱下方有虛線的，可點按開啟 churchofjesuschrist.org《經文指南》詞條定義；50 個名稱中有 32 個找得到對應詞條，其餘經文指南無收錄，維持純文字。</p>
+    <p><b>體例</b>　每一條列出名稱、經文出處與整節中文經文，並將對應的名稱片語加粗；預設中英對照，可用頁首的雙語／中文／English 切換。</p>
+    <p><b>出處</b>　〈50 Names and Titles of Jesus Christ〉，ComeUntoChrist.org；中文經文取自 churchofjesuschrist.org 經文（<code>lang=zho</code>），約伯記、以賽亞書、耶利米書該站無中文版，採和合本譯文。</p>
+    <p><b>詞條連結</b>　名稱下方有虛線的，可點按開啟 churchofjesuschrist.org《經文指南》詞條定義；50 個名稱中有 32 個找得到對應詞條；「細羅」經文指南無收錄，改連《聖經字典》（僅英文）。其餘維持純文字。</p>
     <p><b>出處連結</b>　點按出處即開啟該節經文。教會經文連往 churchofjesuschrist.org（<code>lang=zho</code>）；約伯記、以賽亞書、耶利米書連往 BibleGateway 的和合本與英王欽定本（CUV；KJV）對照單節頁。</p>
     <p><b>英文經文</b>　採英王欽定本（KJV，公有領域），出處連往 churchofjesuschrist.org 英文經文（<code>lang=eng</code>）。</p>
     <p><b>編號</b>　第 10 至 14 條在原文清單中是以賽亞書 9:6 一節內的五個名稱，故合為一則。</p>
